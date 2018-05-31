@@ -1,1 +1,3 @@
-# Todo-List react app created from TheNetNinja's React Course
+# react todo-list app 
+
+created from TheNetNinja's React Course
