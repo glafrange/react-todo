@@ -5,10 +5,16 @@ var ReactDOM = require('react-dom');
 class TodoComponent extends React.Component {
   render(){
     return(
-      <h1>Helooooooooo</h1>
+      <div>
+        <p><strong>Cheese name: </strong>{this.props.cheese.name}</p>
+        <p><strong>Cheese name: </strong>{this.props.cheese.smellFactor}</p>
+        <p><strong>Cheese name: </strong>{this.props.cheese.price}</p>
+      </div>
     );
   }
 };
 
+var myCheese = {name: 'Camembert', smellFactor: 'Extreme pong', price: '3.50'}
+
 // Put component into html page
-ReactDOM.render(<TodoComponent />, document.getElementById("todo-wrapper"));
+ReactDOM.render(<TodoComponent msg="I like cheese" cheese={myCheese}/>, document.getElementById("todo-wrapper"));
