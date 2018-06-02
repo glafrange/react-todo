@@ -10,6 +10,10 @@
   background: #eee;
 }
 
+.todo-item .item-input {
+  display: none;
+}
+
 .item-name{
   flex-basis: 0;
   flex-grow: 9;
